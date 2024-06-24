@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+$faceBook-color:rgb(8, 102, 255);
+.dark-theme{
+    background-color:rgb(28, 30, 33);
+    .container{
+        background-color: #242526;
+        .switchTheme{
+            background-color:#606770;
+        }
+        .currentTime{color: white;}
+        form{
+            button{
+                background-color: #606770;
+            }
+            input{background-color: #606770;
+                color: white;
+            }
+            
+
+        }
+        .creatAccount{
+            background-color: #606770;
+            color: white;
+        }
+        footer{
+            div{color: white;}
+        }
+     }
+}
+.light-theme{
+     background-color:#F2F3F5;
+     .container{
+        background-color: white;
+
+     }
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 1rem;
+    border-radius: 1rem;
+    border: 1px solid rgb(170, 168, 168);
+    min-width: 50vw;
+    min-height: 95vh;
+    .switchTheme{
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        padding: 0.75rem;
+        cursor: pointer;
+    }
+    header{
+        font-size: 3rem;
+        margin: 0.5rem;
+        color: $faceBook-color;
+       
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        input{
+            min-width: 30vw;
+            min-height: 8vh;
+            border: none;
+            margin: 0.25rem 0rem;
+            padding: 0.5rem;
+            font-size: 1.25rem;
+            background-color:#F2F3F5;
+        }
+        button{
+            color:white;
+            background-color: $faceBook-color;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            min-width: 30vw;
+            border: none;
+            cursor: pointer;
+        }
+    }
+    p{  color: $faceBook-color;
+        font-size: 1.25rem;
+        margin: 0.5rem 0rem;
+        cursor: pointer;
+    }
+    .or{
+        border-bottom: 0.5px solid gray;
+        min-width: 30vw;
+        margin: 0.5rem;
+    }
+    .currentTime{margin: 0.5rem 0rem; opacity: 0.5;}
+    .creatAccount{
+        min-width: 20vw;
+        font-size: 1rem;
+        background-color: white;
+        padding: 0.5rem;
+        margin: 1rem 0rem;
+        cursor: pointer;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 30vh;
+        div{
+            color:#606770;
+            margin: 0.75rem 0rem;
+        }
+    }
+}
+@media screen and (max-width:490px){
+    .switchTheme{
+        position: relative !important;
+        right: -5rem !important;
+    }
+}
